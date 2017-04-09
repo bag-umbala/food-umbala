@@ -1,0 +1,349 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54AC1E99DCFF002775EF /* AppDelegate.swift */; };
+		C76B54B41E99DCFF002775EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B31E99DCFF002775EF /* Assets.xcassets */; };
+		C76B54B71E99DCFF002775EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B51E99DCFF002775EF /* LaunchScreen.storyboard */; };
+		C76B54C51E99DDEC002775EF /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54C01E99DDEC002775EF /* StringExtension.swift */; };
+		C76B54C61E99DDEC002775EF /* UIExtesion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54C11E99DDEC002775EF /* UIExtesion.swift */; };
+		C76B54C81E99DEB8002775EF /* MainController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54C71E99DEB8002775EF /* MainController.swift */; };
+		C76B54CA1E99DED8002775EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B54C91E99DED8002775EF /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C76B54A91E99DCFF002775EF /* Food-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C76B54AC1E99DCFF002775EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C76B54B31E99DCFF002775EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		C76B54B61E99DCFF002775EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C76B54B81E99DCFF002775EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C76B54C01E99DDEC002775EF /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		C76B54C11E99DDEC002775EF /* UIExtesion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIExtesion.swift; sourceTree = "<group>"; };
+		C76B54C71E99DEB8002775EF /* MainController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainController.swift; sourceTree = "<group>"; };
+		C76B54C91E99DED8002775EF /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C76B54A61E99DCFF002775EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C76B54A01E99DCFF002775EF = {
+			isa = PBXGroup;
+			children = (
+				C76B54AB1E99DCFF002775EF /* Food-Umbala */,
+				C76B54AA1E99DCFF002775EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C76B54AA1E99DCFF002775EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54A91E99DCFF002775EF /* Food-Umbala.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C76B54AB1E99DCFF002775EF /* Food-Umbala */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54BE1E99DDEC002775EF /* Controllers */,
+				C76B54BF1E99DDEC002775EF /* Helpers */,
+				C76B54C21E99DDEC002775EF /* Models */,
+				C76B54C31E99DDEC002775EF /* Resources */,
+				C76B54C41E99DDEC002775EF /* Views */,
+				C76B54AC1E99DCFF002775EF /* AppDelegate.swift */,
+				C76B54B81E99DCFF002775EF /* Info.plist */,
+			);
+			path = "Food-Umbala";
+			sourceTree = "<group>";
+		};
+		C76B54BE1E99DDEC002775EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54C71E99DEB8002775EF /* MainController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		C76B54BF1E99DDEC002775EF /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54C01E99DDEC002775EF /* StringExtension.swift */,
+				C76B54C11E99DDEC002775EF /* UIExtesion.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		C76B54C21E99DDEC002775EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C76B54C31E99DDEC002775EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54B31E99DCFF002775EF /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		C76B54C41E99DDEC002775EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C76B54B51E99DCFF002775EF /* LaunchScreen.storyboard */,
+				C76B54C91E99DED8002775EF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C76B54A81E99DCFF002775EF /* Food-Umbala */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C76B54BB1E99DCFF002775EF /* Build configuration list for PBXNativeTarget "Food-Umbala" */;
+			buildPhases = (
+				C76B54A51E99DCFF002775EF /* Sources */,
+				C76B54A61E99DCFF002775EF /* Frameworks */,
+				C76B54A71E99DCFF002775EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Food-Umbala";
+			productName = "Food-Umbala";
+			productReference = C76B54A91E99DCFF002775EF /* Food-Umbala.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C76B54A11E99DCFF002775EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Nam Vo";
+				TargetAttributes = {
+					C76B54A81E99DCFF002775EF = {
+						CreatedOnToolsVersion = 8.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = C76B54A41E99DCFF002775EF /* Build configuration list for PBXProject "Food-Umbala" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C76B54A01E99DCFF002775EF;
+			productRefGroup = C76B54AA1E99DCFF002775EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C76B54A81E99DCFF002775EF /* Food-Umbala */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C76B54A71E99DCFF002775EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76B54CA1E99DED8002775EF /* Main.storyboard in Resources */,
+				C76B54B71E99DCFF002775EF /* LaunchScreen.storyboard in Resources */,
+				C76B54B41E99DCFF002775EF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C76B54A51E99DCFF002775EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C76B54C81E99DEB8002775EF /* MainController.swift in Sources */,
+				C76B54C61E99DDEC002775EF /* UIExtesion.swift in Sources */,
+				C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */,
+				C76B54C51E99DDEC002775EF /* StringExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C76B54B51E99DCFF002775EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C76B54B61E99DCFF002775EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C76B54B91E99DCFF002775EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C76B54BA1E99DCFF002775EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C76B54BC1E99DCFF002775EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Food-Umbala/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Food-Umbala";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C76B54BD1E99DCFF002775EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Food-Umbala/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Food-Umbala";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C76B54A41E99DCFF002775EF /* Build configuration list for PBXProject "Food-Umbala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76B54B91E99DCFF002775EF /* Debug */,
+				C76B54BA1E99DCFF002775EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C76B54BB1E99DCFF002775EF /* Build configuration list for PBXNativeTarget "Food-Umbala" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C76B54BC1E99DCFF002775EF /* Debug */,
+				C76B54BD1E99DCFF002775EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C76B54A11E99DCFF002775EF /* Project object */;
+}
