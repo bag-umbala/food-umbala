@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DB093291EA5ED3500CBC6E9 /* TableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */; };
+		3DE0190F1E9FBD7400AFEBCC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */; };
+		3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019101E9FC04900AFEBCC /* TableViewCell.swift */; };
+		3DE019131E9FC8A000AFEBCC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */; };
+		3DE019151E9FCD2B00AFEBCC /* GenerateRadomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019141E9FCD2B00AFEBCC /* GenerateRadomData.swift */; };
 		C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54AC1E99DCFF002775EF /* AppDelegate.swift */; };
 		C76B54B41E99DCFF002775EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B31E99DCFF002775EF /* Assets.xcassets */; };
 		C76B54B71E99DCFF002775EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B51E99DCFF002775EF /* LaunchScreen.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3DE019101E9FC04900AFEBCC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
+		3DE019141E9FCD2B00AFEBCC /* GenerateRadomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRadomData.swift; sourceTree = "<group>"; };
 		C76B54A91E99DCFF002775EF /* Food-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B54AC1E99DCFF002775EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B54B31E99DCFF002775EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -73,6 +83,8 @@
 			isa = PBXGroup;
 			children = (
 				C76B54CB1E99E6E7002775EF /* MainController.swift */,
+				3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */,
+				3DE019101E9FC04900AFEBCC /* TableViewCell.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -82,6 +94,9 @@
 			children = (
 				C76B54C01E99DDEC002775EF /* StringExtension.swift */,
 				C76B54C11E99DDEC002775EF /* UIExtesion.swift */,
+				3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */,
+				3DE019141E9FCD2B00AFEBCC /* GenerateRadomData.swift */,
+				3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -192,8 +207,13 @@
 			files = (
 				C76B54CC1E99E6E7002775EF /* MainController.swift in Sources */,
 				C76B54C61E99DDEC002775EF /* UIExtesion.swift in Sources */,
+				3DB093291EA5ED3500CBC6E9 /* TableViewControllerExtension.swift in Sources */,
+				3DE019151E9FCD2B00AFEBCC /* GenerateRadomData.swift in Sources */,
 				C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */,
+				3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */,
+				3DE0190F1E9FBD7400AFEBCC /* TableViewController.swift in Sources */,
 				C76B54C51E99DDEC002775EF /* StringExtension.swift in Sources */,
+				3DE019131E9FC8A000AFEBCC /* TableViewCellExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,6 +370,7 @@
 				C76B54BD1E99DCFF002775EF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
