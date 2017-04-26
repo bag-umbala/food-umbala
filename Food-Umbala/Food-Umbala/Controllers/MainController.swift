@@ -14,6 +14,7 @@ class MainController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        DB.createDBOrGetDBExist()
     }
 
     override func didReceiveMemoryWarning() {
