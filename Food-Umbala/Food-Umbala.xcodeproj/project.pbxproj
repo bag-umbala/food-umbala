@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-<<<<<<< HEAD
 		C71B3A0C1EA65572007E0D93 /* MenuDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C71B3A0B1EA65572007E0D93 /* MenuDetailsViewController.swift */; };
 		C76A0DA61EA502B9000946A4 /* MenuItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76A0DA51EA502B9000946A4 /* MenuItem.swift */; };
-=======
 		3D0246D81EAEFCA400E62397 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246D71EAEFCA400E62397 /* DB.swift */; };
 		3D0246DB1EAEFCEC00E62397 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246D91EAEFCEC00E62397 /* Area.swift */; };
 		3D0246DC1EAEFCEC00E62397 /* AreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246DA1EAEFCEC00E62397 /* AreaManager.swift */; };
@@ -24,7 +22,6 @@
 		3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019101E9FC04900AFEBCC /* TableViewCell.swift */; };
 		3DE019131E9FC8A000AFEBCC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */; };
 		3DE019151E9FCD2B00AFEBCC /* GenerateRadomData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019141E9FCD2B00AFEBCC /* GenerateRadomData.swift */; };
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 		C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76B54AC1E99DCFF002775EF /* AppDelegate.swift */; };
 		C76B54B41E99DCFF002775EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B31E99DCFF002775EF /* Assets.xcassets */; };
 		C76B54B71E99DCFF002775EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C76B54B51E99DCFF002775EF /* LaunchScreen.storyboard */; };
@@ -37,10 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-<<<<<<< HEAD
 		C71B3A0B1EA65572007E0D93 /* MenuDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuDetailsViewController.swift; sourceTree = "<group>"; };
 		C76A0DA51EA502B9000946A4 /* MenuItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuItem.swift; sourceTree = "<group>"; };
-=======
 		3D0246D71EAEFCA400E62397 /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
 		3D0246D91EAEFCEC00E62397 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
 		3D0246DA1EAEFCEC00E62397 /* AreaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaManager.swift; sourceTree = "<group>"; };
@@ -55,7 +50,6 @@
 		3DE019101E9FC04900AFEBCC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
 		3DE019141E9FCD2B00AFEBCC /* GenerateRadomData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenerateRadomData.swift; sourceTree = "<group>"; };
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 		C76B54A91E99DCFF002775EF /* Food-Umbala.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food-Umbala.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C76B54AC1E99DCFF002775EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C76B54B31E99DCFF002775EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
@@ -136,17 +130,14 @@
 			children = (
 				C7C23AA51E9FC81000D8416C /* MenuTableViewCell.swift */,
 				C76B54CB1E99E6E7002775EF /* MainController.swift */,
-<<<<<<< HEAD
 				C7C23AA71E9FCD1E00D8416C /* MenuTableViewController.swift */,
 				C71B3A0B1EA65572007E0D93 /* MenuDetailsViewController.swift */,
-=======
 				3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */,
 				3DE019101E9FC04900AFEBCC /* TableViewCell.swift */,
 				3D9F16771EA614D500C50AD9 /* TablesCollectionViewCell.swift */,
 				3DB40D161EA6856600EBF986 /* AreaTableViewController.swift */,
 				3DB40D181EA687DD00EBF986 /* AreaTableViewCell.swift */,
 				3D5D37361EAA1A5100474383 /* AreaViewController.swift */,
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -163,7 +154,6 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
 		C76B54C21E99DDEC002775EF /* Models */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,8 +162,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-=======
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 		C76B54C31E99DDEC002775EF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -272,24 +260,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-<<<<<<< HEAD
 				C76A0DA61EA502B9000946A4 /* MenuItem.swift in Sources */,
-=======
 				3D0246DC1EAEFCEC00E62397 /* AreaManager.swift in Sources */,
 				3D9F16781EA614D500C50AD9 /* TablesCollectionViewCell.swift in Sources */,
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 				C76B54CC1E99E6E7002775EF /* MainController.swift in Sources */,
 				C7C23AA81E9FCD1E00D8416C /* MenuTableViewController.swift in Sources */,
 				C76B54C61E99DDEC002775EF /* UIExtesion.swift in Sources */,
-<<<<<<< HEAD
 				C71B3A0C1EA65572007E0D93 /* MenuDetailsViewController.swift in Sources */,
 				C7C23AA61E9FC81000D8416C /* MenuTableViewCell.swift in Sources */,
-=======
 				3DB093291EA5ED3500CBC6E9 /* TableViewControllerExtension.swift in Sources */,
 				3D5D37371EAA1A5100474383 /* AreaViewController.swift in Sources */,
 				3DE019151E9FCD2B00AFEBCC /* GenerateRadomData.swift in Sources */,
 				3DB40D171EA6856600EBF986 /* AreaTableViewController.swift in Sources */,
->>>>>>> 31de50b0fa4d645f534d95715f146784a90461d7
 				C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */,
 				3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */,
 				3DE0190F1E9FBD7400AFEBCC /* TableViewController.swift in Sources */,
