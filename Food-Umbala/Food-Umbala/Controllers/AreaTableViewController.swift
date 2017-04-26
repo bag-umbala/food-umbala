@@ -1,33 +1,39 @@
 //
-//  TableViewController.swift
+//  AreaTableViewController.swift
 //  Food-Umbala
 //
-//  Created by Nam Nguyen on 4/13/17.
+//  Created by Nam Nguyen on 4/19/17.
 //  Copyright © 2017 Nam Vo. All rights reserved.
 //
 
 import UIKit
+import os.log
 
-class TableViewController: UITableViewController {
-    
+class AreaTableViewController: UITableViewController {
     // MARK: *** Data model
-    let model: [[UIColor]] = generateRandomData()
-    let modelTitle: [String] = [
-            "Area A",
-            "Area B",
-            "Area C"
+    var modelArea: [Area] = [
+        Area(name: "Area A"),
+        Area(name: "Area B"),
+        Area(name: "Area C")
     ];
     
     // MARK: *** UI Elements
-    @IBOutlet var tablesTableView: UITableView!
     
     // MARK: *** UI events
+    @IBAction func unwindToAreaList(sender: UIStoryboardSegue) {
+        if let sourceViewController = sender.source as? AreaViewController, let area = sourceViewController.area {
+            // Add a new area.
+            let newIndexPath = IndexPath(row: modelArea.count, section: 0)
+            
+            modelArea.append(Area(name: area.name))
+            tableView.insertRows(at: [newIndexPath], with: .automatic)
+        }
+    }
     
     // MARK: *** Local variables
-    var storedOffsets = [Int: CGFloat]()
-    
     
     // MARK: *** UIViewController
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -36,8 +42,7 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        tablesTableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
-        tablesTableView.scrollIndicatorInsets = tablesTableView.contentInset
+        self.navigationItem.rightBarButtonItem = self.editButtonItem;
     }
 
     override func didReceiveMemoryWarning() {
@@ -49,52 +54,30 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return modelTitle.count
-    }
-    
-    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return modelTitle[section]
+        return 1
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return model.count
+        return modelArea.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-//
-//        // Configure the cell...
-//
-//        return cell
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell",
-                                                 for: indexPath) //as! TableViewCell
-//        cell.collectionView
+        let cell = tableView.dequeueReusableCell(withIdentifier: "areaCell", for: indexPath)
+                as! AreaTableViewCell
+        cell.AreaImg.image = UIImage(named: "Areas")
+        cell.NameAreaLbl.text = modelArea[indexPath.row].name
+        cell.NumTableInAreaLbl.text = "\(5)"
+
         return cell
     }
 
-    /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
         // Return false if you do not want the specified item to be editable.
         return true
     }
-    */
-    
-    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? TableViewCell else { return }
-        
-        tableViewCell.setCollectionViewDataSourceDelegate(self, forRow: indexPath.row)
-        tableViewCell.collectionViewOffset = storedOffsets[indexPath.row] ?? 0
-    }
-    
-    override func tableView(_ tableView: UITableView, didEndDisplaying cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        guard let tableViewCell = cell as? TableViewCell else { return }
-        
-        storedOffsets[indexPath.row] = tableViewCell.collectionViewOffset
-    }
 
-    /*
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
@@ -104,14 +87,11 @@ class TableViewController: UITableViewController {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
         }    
     }
-    */
 
-    /*
     // Override to support rearranging the table view.
     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
 
     }
-    */
 
     /*
     // Override to support conditional rearranging of the table view.
@@ -121,13 +101,33 @@ class TableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        super.prepare(for: segue, sender: sender)
+        switch segue.identifier ?? "" {
+        case "AddArea":
+            os_log("Adding a new Area.", log: OSLog.default, type: .debug)
+        case "ShowDetail":
+            guard let areaDetailViewController = segue.destination as? AreaViewController else {
+                fatalError("Unexpected destination: \(segue.destination)")
+            }
+            
+            guard let selectedAreaCell = sender as? AreaTableViewCell else {
+                fatalError("Unexpected sender: \(sender)")
+            }
+            
+            guard let indexPath = tableView.indexPath(for: selectedAreaCell) else {
+                fatalError("The selected cell is not being displayed by the table")
+            }
+            
+            let selectedArea = modelArea[indexPath.row]
+            areaDetailViewController.area = selectedArea
+        default:
+            fatalError("Unexpected Segue Identifier; \(segue.identifier)")
+//            os_log("Default", log: OSLog.default, type: .debug)
+        }
     }
-    */
+
 }

@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3D0246D81EAEFCA400E62397 /* DB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246D71EAEFCA400E62397 /* DB.swift */; };
+		3D0246DB1EAEFCEC00E62397 /* Area.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246D91EAEFCEC00E62397 /* Area.swift */; };
+		3D0246DC1EAEFCEC00E62397 /* AreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D0246DA1EAEFCEC00E62397 /* AreaManager.swift */; };
+		3D5D37371EAA1A5100474383 /* AreaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5D37361EAA1A5100474383 /* AreaViewController.swift */; };
+		3D9F16781EA614D500C50AD9 /* TablesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9F16771EA614D500C50AD9 /* TablesCollectionViewCell.swift */; };
 		3DB093291EA5ED3500CBC6E9 /* TableViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */; };
+		3DB3A45E1EAA5A86001AE9B2 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DB3A45D1EAA5A86001AE9B2 /* libsqlite3.tbd */; };
+		3DB40D171EA6856600EBF986 /* AreaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB40D161EA6856600EBF986 /* AreaTableViewController.swift */; };
+		3DB40D191EA687DD00EBF986 /* AreaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DB40D181EA687DD00EBF986 /* AreaTableViewCell.swift */; };
 		3DE0190F1E9FBD7400AFEBCC /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */; };
 		3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019101E9FC04900AFEBCC /* TableViewCell.swift */; };
 		3DE019131E9FC8A000AFEBCC /* TableViewCellExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */; };
@@ -22,7 +30,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D0246D71EAEFCA400E62397 /* DB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DB.swift; sourceTree = "<group>"; };
+		3D0246D91EAEFCEC00E62397 /* Area.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Area.swift; sourceTree = "<group>"; };
+		3D0246DA1EAEFCEC00E62397 /* AreaManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaManager.swift; sourceTree = "<group>"; };
+		3D0246E01EAEFE8F00E62397 /* Food-Umbala-Briding-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Food-Umbala-Briding-Header.h"; sourceTree = "<group>"; };
+		3D5D37361EAA1A5100474383 /* AreaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaViewController.swift; sourceTree = "<group>"; };
+		3D9F16771EA614D500C50AD9 /* TablesCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TablesCollectionViewCell.swift; sourceTree = "<group>"; };
 		3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewControllerExtension.swift; sourceTree = "<group>"; };
+		3DB3A45D1EAA5A86001AE9B2 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3DB40D161EA6856600EBF986 /* AreaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewController.swift; sourceTree = "<group>"; };
+		3DB40D181EA687DD00EBF986 /* AreaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AreaTableViewCell.swift; sourceTree = "<group>"; };
 		3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3DE019101E9FC04900AFEBCC /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		3DE019121E9FC8A000AFEBCC /* TableViewCellExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCellExtension.swift; sourceTree = "<group>"; };
@@ -43,17 +60,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB3A45E1EAA5A86001AE9B2 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3D0246D61EAEFCA400E62397 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3D0246D91EAEFCEC00E62397 /* Area.swift */,
+				3D0246DA1EAEFCEC00E62397 /* AreaManager.swift */,
+				3D0246D71EAEFCA400E62397 /* DB.swift */,
+				3D0246E01EAEFE8F00E62397 /* Food-Umbala-Briding-Header.h */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3DB3A45C1EAA5A86001AE9B2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DB3A45D1EAA5A86001AE9B2 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C76B54A01E99DCFF002775EF = {
 			isa = PBXGroup;
 			children = (
 				C76B54AB1E99DCFF002775EF /* Food-Umbala */,
 				C76B54AA1E99DCFF002775EF /* Products */,
+				3DB3A45C1EAA5A86001AE9B2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,8 +108,8 @@
 			children = (
 				C76B54BE1E99DDEC002775EF /* Controllers */,
 				C76B54BF1E99DDEC002775EF /* Helpers */,
-				C76B54C21E99DDEC002775EF /* Models */,
 				C76B54C31E99DDEC002775EF /* Resources */,
+				3D0246D61EAEFCA400E62397 /* Model */,
 				C76B54C41E99DDEC002775EF /* Views */,
 				C76B54AC1E99DCFF002775EF /* AppDelegate.swift */,
 				C76B54B81E99DCFF002775EF /* Info.plist */,
@@ -85,6 +123,10 @@
 				C76B54CB1E99E6E7002775EF /* MainController.swift */,
 				3DE0190E1E9FBD7400AFEBCC /* TableViewController.swift */,
 				3DE019101E9FC04900AFEBCC /* TableViewCell.swift */,
+				3D9F16771EA614D500C50AD9 /* TablesCollectionViewCell.swift */,
+				3DB40D161EA6856600EBF986 /* AreaTableViewController.swift */,
+				3DB40D181EA687DD00EBF986 /* AreaTableViewCell.swift */,
+				3D5D37361EAA1A5100474383 /* AreaViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -99,13 +141,6 @@
 				3DB093281EA5ED3500CBC6E9 /* TableViewControllerExtension.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		C76B54C21E99DDEC002775EF /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		C76B54C31E99DDEC002775EF /* Resources */ = {
@@ -165,6 +200,7 @@
 				TargetAttributes = {
 					C76B54A81E99DCFF002775EF = {
 						CreatedOnToolsVersion = 8.3;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -205,15 +241,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D0246DC1EAEFCEC00E62397 /* AreaManager.swift in Sources */,
+				3D9F16781EA614D500C50AD9 /* TablesCollectionViewCell.swift in Sources */,
 				C76B54CC1E99E6E7002775EF /* MainController.swift in Sources */,
 				C76B54C61E99DDEC002775EF /* UIExtesion.swift in Sources */,
 				3DB093291EA5ED3500CBC6E9 /* TableViewControllerExtension.swift in Sources */,
+				3D5D37371EAA1A5100474383 /* AreaViewController.swift in Sources */,
 				3DE019151E9FCD2B00AFEBCC /* GenerateRadomData.swift in Sources */,
+				3DB40D171EA6856600EBF986 /* AreaTableViewController.swift in Sources */,
 				C76B54AD1E99DCFF002775EF /* AppDelegate.swift in Sources */,
 				3DE019111E9FC04900AFEBCC /* TableViewCell.swift in Sources */,
 				3DE0190F1E9FBD7400AFEBCC /* TableViewController.swift in Sources */,
+				3D0246DB1EAEFCEC00E62397 /* Area.swift in Sources */,
 				C76B54C51E99DDEC002775EF /* StringExtension.swift in Sources */,
+				3DB40D191EA687DD00EBF986 /* AreaTableViewCell.swift in Sources */,
 				3DE019131E9FC8A000AFEBCC /* TableViewCellExtension.swift in Sources */,
+				3D0246D81EAEFCA400E62397 /* DB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,10 +374,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Food-Umbala/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Food-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food-Umbala/Model/Food-Umbala-Briding-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -343,10 +389,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "Food-Umbala/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "namvh.Food-Umbala";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Food-Umbala/Model/Food-Umbala-Briding-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

@@ -5,23 +5,27 @@
 //  Created by Nam Nguyen on 4/18/17.
 //  Copyright © 2017 Nam Vo. All rights reserved.
 //
-import Foundation
+import UIKit
 
-//extension TableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
-//    func collectionView(collectionView: UICollectionView,
-//                        numberOfItemsInSection section: Int) -> Int {
-//        
-//        return model[collectionView.tag].count
-//    }
-//    
-//    func collectionView(collectionView: UICollectionView,
-//                        cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
-//        
-//        let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Cell",
-//                                                                         forIndexPath: indexPath)
-//        
-//        cell.backgroundColor = model[collectionView.tag][indexPath.item]
-//        
-//        return cell
-//    }
-//}
+extension TableViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+    
+    func collectionView(_ collectionView: UICollectionView,
+                        numberOfItemsInSection section: Int) -> Int {
+        
+        return model[collectionView.tag].count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell",
+                                                      for: indexPath as IndexPath)
+        
+        cell.backgroundColor = model[collectionView.tag][indexPath.item]
+//        print(cell)
+        let cellCollect = cell as! TablesCollectionViewCell
+        cellCollect.imgColllecCell.image = UIImage(named: "Areas")
+        cellCollect.lblCollecCell.text = "Hello"
+        
+        return cell
+    }
+}
